@@ -66,7 +66,7 @@ public:
         consensus.nSubsidyHalvingInterval = 2100000;
 
         consensus.BIP34Height = 1;
-        consensus.BIP34Hash = uint256S("");
+        consensus.BIP34Hash = uint256S("00000000000000005a5c13fe33f6717c7ad81fc8837ae75e4693c16acbdd0f66");
         consensus.BIP65Height = 1;
         consensus.BIP66Height = 1;
         consensus.CSVHeight = 1;
@@ -122,7 +122,7 @@ public:
         pchMessageStart[2] = 0x94;
         pchMessageStart[3] = 0xb9;
         nDefaultPort = 8333;
-        nPruneAfterHeight = 100000;
+        nPruneAfterHeight = 10000;
         m_assumed_blockchain_size = 496;
         m_assumed_chain_state_size = 6;
 
@@ -138,6 +138,7 @@ public:
         // release ASAP to avoid it where possible.
         vSeeds.clear();
         vSeeds.emplace_back("dnsseed-mainnet.fractalbitcoin.io.");
+        vSeeds.emplace_back("dnsseed-mainnet.unisat.io.");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -187,7 +188,7 @@ public:
         consensus.nSubsidyHalvingInterval = 2100000;
 
         consensus.BIP34Height = 1;
-        consensus.BIP34Hash = uint256S("");
+        consensus.BIP34Hash = uint256S("000000000021b22bb6a9718e5db62fca1eb2ac6e34535e70c67b374dcb29c570");
         consensus.BIP65Height = 1;
         consensus.BIP66Height = 1;
         consensus.CSVHeight = 1;
@@ -238,7 +239,7 @@ public:
         pchMessageStart[2] = 0xa3;
         pchMessageStart[3] = 0xc8;
         nDefaultPort = 18333;
-        nPruneAfterHeight = 100000;
+        nPruneAfterHeight = 10000;
         m_assumed_blockchain_size = 496;
         m_assumed_chain_state_size = 6;
 
